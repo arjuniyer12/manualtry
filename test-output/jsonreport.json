@@ -1,0 +1,263 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6455300510,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "StepDefintions.HomepageSteps.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-22T08:44:53.521Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2084341068,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.hooks.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Validate Home page functionalities",
+        "description": "",
+        "id": "home-page;validate-home-page-functionalities",
+        "after": [
+          {
+            "result": {
+              "duration": 83778238,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24159828,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User gets title of the page",
+            "match": {
+              "location": "StepDefintions.HomepageSteps.user_gets_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2060613,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "homepage title should be \"Zestimcart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zestimcart\"",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefintions.HomepageSteps.homepage_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Home Page",
+    "description": "",
+    "id": "home-page",
+    "keyword": "Feature",
+    "uri": "file:Features/HomePage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9531928685,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on homepage",
+            "match": {
+              "location": "StepDefintions.HomepageSteps.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-22T08:45:02.261Z",
+        "before": [
+          {
+            "result": {
+              "duration": 699764892,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.hooks.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "placing order",
+        "description": "",
+        "id": "order-placing;placing-order",
+        "after": [
+          {
+            "result": {
+              "duration": 76844521,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6131530016,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on a product",
+            "match": {
+              "location": "StepDefintions.orderplacingsteps.user_click_on_a_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 115974946,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on Buy now button",
+            "match": {
+              "location": "StepDefintions.orderplacingsteps.click_on_Buy_now_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4066890129,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "login using username as \"banktest@devmail.info\" and password as \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"banktest@devmail.info\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefintions.orderplacingsteps.login_using_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1178188213,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on login",
+            "match": {
+              "location": "StepDefintions.orderplacingsteps.click_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11309004,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should be able to view checkout page with title \"Checkout\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checkout\"",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefintions.orderplacingsteps.user_should_be_able_to_view_checkout_page_with_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9960925000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user fill details and click on checkout submit",
+            "match": {
+              "location": "StepDefintions.orderplacingsteps.user_fill_details_and_click_on_checkout_submit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\n\tat StepDefintions.orderplacingsteps.order_should_be_placed_and_thank_you_page_should_be_displayed(orderplacingsteps.java:75)\n\tat ✽.order should be placed and thank you page should be displayed(file:///home/arjun/git/msiteoprepo/MerchantSites_Cucumber/Features/orderplacing.feature:13)\n",
+              "duration": 2397299,
+              "status": "pending"
+            },
+            "line": 13,
+            "name": "order should be placed and thank you page should be displayed",
+            "match": {
+              "location": "StepDefintions.orderplacingsteps.order_should_be_placed_and_thank_you_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Order placing",
+    "description": "",
+    "id": "order-placing",
+    "keyword": "Feature",
+    "uri": "file:Features/orderplacing.feature",
+    "tags": []
+  }
+]
